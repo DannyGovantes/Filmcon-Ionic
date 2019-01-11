@@ -1,0 +1,48 @@
+page-login {
+
+    ion-content{
+        .scroll-content{
+            background-color: map-get($colors, dark );
+        }
+    }
+
+    .item{
+        background-color: map-get($colors, dark );
+    }
+
+    .logo{
+        font-size: 20vh;
+        margin-top: 7px;
+        margin-bottom: 20px;
+    }
+    h1{
+        color: beige;
+        font-size: 3px;
+    }
+    .rowStyle{
+        height: 40px;
+        background-color:#BFBDBA;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        border-radius: 15px;
+        margin: 2px;
+        ion-icon{
+            margin-top:12px;
+            margin-right: 3px;
+        }
+    }
+    .rLabel{
+        color: beige;
+        height: 40px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        border-radius: 15px;
+        margin: 2px;         
+        background-color:#BFBDBA;
+        border-radius: 15px;
+        font-size: 13px;
+         
+    }
+
+   
+}

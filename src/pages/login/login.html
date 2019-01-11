@@ -1,0 +1,43 @@
+<ion-header hidden>
+  <ion-navbar color="light" >
+    <ion-title>
+      FILMCON
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content  padding>
+<ion-item text-center no-lines>
+  <ion-icon name="aperture" class="logo"></ion-icon>
+</ion-item>
+<ion-item text-center no-lines>
+    <h1>FILMCON</h1>
+    <p>Una industria al alcance</p><p> de tus manos</p>
+</ion-item>
+
+<ion-grid >
+  <ion-row class="rowStyle">
+    <ion-icon name="mail" ></ion-icon>
+     <ion-input  type="email" placeholder="Email" [(ngModel)]="email"></ion-input>
+  </ion-row>
+
+  <ion-row class="rowStyle">
+    <ion-icon name="key" ></ion-icon>
+    <ion-input  type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+  </ion-row>
+
+  <ion-row>
+    <ion-item no-lines class="rLabel">
+      <ion-label >Remember me</ion-label>
+      <ion-checkbox checked="true"></ion-checkbox>
+    </ion-item>
+  </ion-row>
+  <ion-row>
+    <button ion-button block round color="light" outline (click)="login()">Log In</button>
+  </ion-row>
+
+</ion-grid>
+
+<button ion-button clear block (click)="gotoSignup()">¿No tienes cuenta? Regístrate</button>
+
+</ion-content>

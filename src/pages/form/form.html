@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>form</ion-title>
+  </ion-navbar>
+
+</ion-header>
+  
+
+<ion-content >
+  <ion-item>
+    <ion-label>SomeShiid</ion-label>
+    <select-searchable item-content [(ngModel)]="user" [items]="users" itemValueField="id"
+     itemTextField="name" [canSearch]="true" (onChange)="userChanged($event)">
+    </select-searchable>
+  </ion-item>
+  <ion-item>
+    <ion-label>SomeShiid</ion-label>
+    <select-searchable item-content [(ngModel)]="userIds" [items]="users" itemValueField="id"
+     itemTextField="name" [canSearch]="true" (onChange)="userChanged($event)"
+     [isMultiple]="true" okButtonText="ok" (onClose)="onClose($event)" 
+     [shouldStoreItemValue]="true" #mySelect >
+    </select-searchable>
+  </ion-item>
+
+</ion-content>

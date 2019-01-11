@@ -1,0 +1,19 @@
+page-feed {
+
+    .rowStyle{
+        border: solid map-get($colors , dark ) 1px;
+        border-radius: 30px;
+        margin-top: 15;
+
+        ion-input{
+            margin-top: 5px;
+        }
+    }
+    .cardStyle{
+        border-radius: 10px;
+    }
+    .bottom-bar{
+        background-color: map-get($colors, light );
+    }
+
+}
